@@ -1,0 +1,7 @@
+# Compound-style return-code semantics: 0 = success, 1 = UNAUTHORIZED (no revert)
+fUSDT.withdrawAllToken(0) from ADMIN (bool ret)      -> 1
+fUSDT._setPendingAdmin(unpriv) from UNPRIV           -> 1
+fUSDT._reduceReserves(1) from UNPRIV                 -> 1
+fUSDT._reduceReserves(1) from ADMIN                  -> 0
+fUSDT._setInterestRateModel(unpriv) from UNPRIV      -> 1
+comptroller._setPriceOracle(unpriv) from UNPRIV      -> 16

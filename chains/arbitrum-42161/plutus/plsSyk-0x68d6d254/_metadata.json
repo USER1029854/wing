@@ -1,0 +1,11 @@
+{
+  "ContractName": "PlsSykToken",
+  "CompilerVersion": "v0.8.24+commit.e11b9ed9",
+  "OptimizationUsed": "1",
+  "Runs": "1000",
+  "EVMVersion": "paris",
+  "LicenseType": "",
+  "Proxy": "0",
+  "Implementation": "",
+  "ConstructorArguments": ""
+}

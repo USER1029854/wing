@@ -1,0 +1,25 @@
+Comptroller 0x49620e9bfd117c7b05b4732980b05b7afee60a69 getAllMarkets() — 19 markets
+All ERC20 markets delegate to shared impl 0x120af5748207161cc539ee5878fef9e3a12ad11a (recovered once).
+fBNB (0x6575…) is the only standalone (native BNB) market.
+
+#   fToken                                       impl(0x120af5?)  underlying
+1   0xdf69e8da10f0f8407b87ac839550053a001d3d7d   yes   0x3cb7378565718c64ab86970802140cc48ef1f969  (fWING / WING)
+2   0xab96cb2317dfc8280a90deb7ef7b97efe34f926f   yes   0xba2ae424d960c26247dd6c32edc70b295c744c43  (DOGE)
+3   0xf78274d7b5cca63b7d6692dfffd8398d69cefa34   yes   0x3ee2200efb3400fabb9aacf31297cbdd1d435d47  (ADA)
+4   0xfabf6eb0219e2ce7f38b0534053104b3400b8718   yes   0xfd7b3a77848f1c2d67e05e54d78d174a0c850335  (TUSD-old)
+5   0x4ebb34865ae375bc7f298384de5eeab78fd3572a   yes   0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c  (BTCB)
+6   0xf0ee3d7181c3e3a46f85fa113e629167e06aa916   yes   0x2170ed0880ac9a755fd29b2688956bd959f933f8  (ETH)
+7   0x6575cfa99a00a054cc3536f7978636701498fc81   STANDALONE (native BNB)  *** TARGET fBNB ***
+8   0xbc11091d6203500c480f0305140c687ab52b224b   yes   0x55d398326f99059ff775485246999027b3197955  (USDT)  *** TARGET fUSDT ***
+9   0x5e5003e1b658a9c37660f4e6a730833b8a433047   yes   0xe9e7cea3dedca5984780bafc599bd69add087d56  (BUSD)  *** TARGET fBUSD ***
+10  0xe21b6194903282772bcf40fef6848f28f50b51ee   yes   0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d  (USDC)
+11  0x22ada8420468ea3b3b39b87cda5742b183c7e28b   yes   0x7083609fce4d1d8dc0c979aab8c869ea2c873402  (DOT)
+12  0x252a7aa203a6df2f7781a124cb95c27aae4f286c   yes   0x8ff795a6f4d97e7887c79bea79aba5cc76444adf  (BCH)
+13  0xb51d7a841911461d4ae97a49de78be086a71a724   yes   0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe  (XRP)
+14  0xef40fd44b78775df6fb0b19eb680475cf2d239ea   yes   0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3  (DAI)
+15  0x49831fd1b9753b630a5b220656dd42d6cd7ae8f1   yes   0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd  (LINK)
+16  0x5409ff9585c9c942389f4f84ee4dc28ae2f361f1   yes   0x4338665cbb7b2485a8855a139b75d5e34ab0db94  (LTC)
+17  0x683f5af0fdfc2894363517f7cf30fd8bdadf7b96   yes   0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82  (CAKE)
+18  0x30061d6b51f193223300787c3052aab6cfcb6df7   yes   0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153  (FIL)
+19  0x7ab3a7059ebc247b25df7b492548c5e2737db84f   yes   0x308bfaeaac8bdab6e9fc5ead8edcb5f95b0599d9  (MATIC)
+(underlying labels inferred from canonical BSC token addresses; USDT/BUSD/BNB confirmed by direct read.)

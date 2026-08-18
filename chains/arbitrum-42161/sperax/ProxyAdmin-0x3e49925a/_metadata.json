@@ -1,0 +1,11 @@
+{
+  "ContractName": "ProxyAdmin",
+  "CompilerVersion": "v0.6.12+commit.27d51765",
+  "OptimizationUsed": "1",
+  "Runs": "1",
+  "EVMVersion": "Default",
+  "LicenseType": "MIT",
+  "Proxy": "0",
+  "Implementation": "",
+  "ConstructorArguments": ""
+}

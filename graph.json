@@ -1,0 +1,69 @@
+{
+  "generated_for": "contract audit bundle - trust graph resolution both directions",
+  "note": "Exploitability not assessed. Live state is a snapshot; re-read before relying.",
+  "subsystems": {
+    "wing-bsc-56": {
+      "chain": 56,
+      "kind": "Compound-v2 fork lending market",
+      "targets": ["0xbc11091d6203500c480f0305140c687ab52b224b","0x5e5003e1b658a9c37660f4e6a730833b8a433047","0x6575cfa99a00a054cc3536f7978636701498fc81"],
+      "authorities_all_EOA": {
+        "admin": "0x90dac303c9bcf43cb6e31eedad999490670f387e",
+        "comptroller_pause_operator": "0x15f88ffe891dd7eadea25e1834deb5063caa9167",
+        "irm_owner": "0x28fa655c09918afc1798f4c152013685b21507bb",
+        "oracle_owner": "0xe828183f4f85a7ec2dc5fb49a195c7b85f57964e",
+        "oracle_price_operator": "0x9171f417153b6773ff41e4ace4af36bb3e736748"
+      },
+      "contracts": [
+        {"addr":"0xbc11091d6203500c480f0305140c687ab52b224b","role":"target fUSDT (CErc20Delegator)","verified":false,"recovered":"recovered/CErc20Delegator-shell-0xbc11091d","reaches":["0x120af5748207161cc539ee5878fef9e3a12ad11a","0x55d398326f99059ff775485246999027b3197955","0x49620e9bfd117c7b05b4732980b05b7afee60a69","0x206e179b89c18bf077b03df4ce224a7339447a0f"]},
+        {"addr":"0x5e5003e1b658a9c37660f4e6a730833b8a433047","role":"target fBUSD (CErc20Delegator, byte-identical shell to fUSDT)","verified":false,"recovered":"same shell code as fUSDT","reaches":["0x120af5748207161cc539ee5878fef9e3a12ad11a","0xe9e7cea3dedca5984780bafc599bd69add087d56"]},
+        {"addr":"0x6575cfa99a00a054cc3536f7978636701498fc81","role":"target fBNB (standalone native market)","verified":false,"recovered":"recovered/fBNB-0x6575cfa9","reaches":["0x49620e9bfd117c7b05b4732980b05b7afee60a69","0x206e179b89c18bf077b03df4ce224a7339447a0f"]},
+        {"addr":"0x120af5748207161cc539ee5878fef9e3a12ad11a","role":"shared fToken delegate impl (18 markets)","verified":false,"recovered":"recovered/fToken-delegate-impl-0x120af5","custom_drain":"withdrawAllToken(uint256) admin-only full-balance transfer"},
+        {"addr":"0x49620e9bfd117c7b05b4732980b05b7afee60a69","role":"Unitroller proxy","verified":false,"recovered":"recovered/Unitroller-shell-0x49620e9b","reaches":["0x17afa1eb1feede3ed791e1b5c4b32b544e6cbc0b"]},
+        {"addr":"0x17afa1eb1feede3ed791e1b5c4b32b544e6cbc0b","role":"Comptroller impl (Wing-customised)","verified":false,"recovered":"recovered/Comptroller-impl-0x17afa1eb","reaches":["0x91cb061f29c37012daa29f8e5abe180fd415d9fa","0x65d999ddaaa6b0424be37a53d5574e43e9433788","0x3cb7378565718c64ab86970802140cc48ef1f969"]},
+        {"addr":"0x91cb061f29c37012daa29f8e5abe180fd415d9fa","role":"PriceOracle (hybrid Chainlink + operator override, keyed by underlying)","verified":false,"recovered":"recovered/PriceOracle-0x91cb061f","reaches":["0xb97ad0e74fa7d920791e90258a6e2085088b4320","0xcbb98864ef56e9042e7d2efef76141f15731b82f","0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee"]},
+        {"addr":"0x206e179b89c18bf077b03df4ce224a7339447a0f","role":"InterestRateModel (JumpRateModel)","verified":false,"recovered":"recovered/IRM-0x206e179b"},
+        {"addr":"0x65d999ddaaa6b0424be37a53d5574e43e9433788","role":"Insurance proxy (IInsurance iToken, underlying WING)","verified":false,"recovered":"recovered/Insurance-impl-0x3c22f604","impl":"0x3c22f604cc8b422f43beca8d8cdef9922b96f454","custom_drain":"withdrawAllToken() admin-only"},
+        {"addr":"0x55d398326f99059ff775485246999027b3197955","role":"USDT underlying","verified":true,"source":"dependencies/USDT-0x55d39832"},
+        {"addr":"0xe9e7cea3dedca5984780bafc599bd69add087d56","role":"BUSD underlying","verified":true,"source":"dependencies/BUSD-0xe9e7cea3"},
+        {"addr":"0x3cb7378565718c64ab86970802140cc48ef1f969","role":"WING reward token","verified":true,"source":"dependencies/WING-impl-0xdfebae62","impl":"0xdfebae62a29595a7a00afe2676b8fb54110c3817"},
+        {"addr":"0xb97ad0e74fa7d920791e90258a6e2085088b4320","role":"Chainlink USDT/USD (canonical, verified fresh)","verified":true,"external":"chainlink"},
+        {"addr":"0xcbb98864ef56e9042e7d2efef76141f15731b82f","role":"Chainlink BUSD/USD (canonical, verified fresh)","verified":true,"external":"chainlink"},
+        {"addr":"0x0567f2323251f0aab15c8dfb1967e4e8a7d42aee","role":"Chainlink BNB/USD (canonical, verified fresh)","verified":true,"external":"chainlink"}
+      ]
+    },
+    "sperax-arbitrum-42161": {
+      "chain": 42161,
+      "kind": "SPA->USDs buyback",
+      "target": "0xFbc0d3cA777722d234FE01dba94DeDeDb277AFe3",
+      "authority_root": {"safe_3of5":"0x5b12d9846f8612e439730d18e1c12634753b1bf1","owns":["SPABuyback logic","ProxyAdmin upgrade","MasterPriceOracle","SPAOracle","USDsDIAOracle"]},
+      "contracts": [
+        {"addr":"0xFbc0d3cA777722d234FE01dba94DeDeDb277AFe3","role":"target SPABuyback proxy (shell unverified)","verified":"shell_no_impl_yes","impl":"0xa8308a2deeaeb7ee7cb27845328a27cd755c8dc9","source":"SPABuyback-impl-0xa8308a2d"},
+        {"addr":"0x3e49925a79cbfb68baa5bc9dfb4f7d955d1ddf25","role":"ProxyAdmin","verified":true,"source":"ProxyAdmin-0x3e49925a"},
+        {"addr":"0x14d99412dab1878dc01fe7a1664cde85896e8e50","role":"MasterPriceOracle (staticcall router)","verified":true,"source":"MasterPriceOracle-0x14d99412","reaches":["0xe69671c98842f3ddb965b94c0d99b60d8e161f34","0xd6ce80d968c8229fdaea6e315b0441d299fb40f4"]},
+        {"addr":"0xe69671c98842f3ddb965b94c0d99b60d8e161f34","role":"SPAOracle (70% DIA + 30% UniV3 TWAP)","verified":true,"source":"SPAOracle-0xe69671c9","reaches":["0x7919D08e0f41398cBc1e0A8950Df831e4895c19b"]},
+        {"addr":"0xd6ce80d968c8229fdaea6e315b0441d299fb40f4","role":"USDsDIAOracle","verified":true,"source":"USDsDIAOracle-0xd6ce80d9","reaches":["0x7919D08e0f41398cBc1e0A8950Df831e4895c19b"]},
+        {"addr":"0x7919D08e0f41398cBc1e0A8950Df831e4895c19b","role":"DIA oracle (OFF-CHAIN feeder)","verified":"offchain_component"},
+        {"addr":"0x5ed5c72d24ff0931e5a38c2969160dfe259e7c05","role":"veSPA rewarder (TUP proxy)","verified":true,"impl":"0x3380b7130dd112ba44dd140abe5fd360836106a5","source":"veSPARewarder-impl-0x3380b713"},
+        {"addr":"0x5575552988A3A80504bBaeB1311674fCFd40aD4B","role":"SPA token","verified":true},
+        {"addr":"0xD74f5255D557944cf7Dd0E45FF521520002D5748","role":"USDs token (proxy)","verified":true,"impl":"0x67b58013742ce6bb0cdc2ef3ce0a35c1d2f5f3c2","source":"USDs-impl-0x67b58013"}
+      ]
+    },
+    "plutus-arbitrum-42161": {
+      "chain": 42161,
+      "kind": "liquid staking token (plsDPX)",
+      "target_handed_over": "0xf236ea74B515ab96AF1c7Cd25AB88Cae42E322FA",
+      "target_handed_over_status": "EMPTY on Arbitrum (no code) - corrupted discovery address",
+      "target_real": "0xf236ea74b515ef96a9898f5a4ed4aa591f253ce1",
+      "authority_root": {"safe_4of7":"0xa5c1c5a67ba16430547fea9d608ef81119be1876","owns":["plsDPX (setOperator)","migrator (UUPS upgrade)"]},
+      "contracts": [
+        {"addr":"0xf236ea74b515ef96a9898f5a4ed4aa591f253ce1","role":"target plsDPX token (real)","verified":true,"source":"plsDPX-0xf236ea74"},
+        {"addr":"0x53f68d06ba0957fcc7bf0348e52eb7006496c4c2","role":"operator/minter proxy (mint+burn plsDPX)","verified":true,"impl":"0x400ea86b40e9a5a0a29e6735bde109f58f00b423","source":"plsDPX-minter-impl-0x400ea86b"},
+        {"addr":"0x68d6d2545f14751baf36c417c2cc7cdf8da8a15b","role":"plsSyk","verified":true,"source":"plsSyk-0x68d6d254"},
+        {"addr":"0x65b1ca92a017ecfa4060231dfc28f69264daa3b0","role":"SykMigrator","verified":true,"source":"sykMigrator-0x65b1ca92"},
+        {"addr":"0x2ed0837d9f2fbb927011463fad0736f86ea6bf25","role":"SykDepositor proxy","verified":true,"impl":"0xc235b15a986d2b500f5312bbfe898fccf578f477","source":"sykDepositor-impl-0xc235b15a"},
+        {"addr":"0x6c2c06790b3e3e3c38e12ee22f8183b37a13ee55","role":"DPX token","verified":true},
+        {"addr":"0xacc51ffdef63fb0c014c882267c3a17261a5ed50","role":"SYK token","verified":true}
+      ]
+    }
+  }
+}

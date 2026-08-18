@@ -1,0 +1,11 @@
+{
+  "ContractName": "BEP20TokenImplementation",
+  "CompilerVersion": "v0.6.2+commit.bacdbe57",
+  "OptimizationUsed": "1",
+  "Runs": "200",
+  "EVMVersion": "Default",
+  "LicenseType": "Apache-2.0",
+  "Proxy": "0",
+  "Implementation": "",
+  "ConstructorArguments": ""
+}

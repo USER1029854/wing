@@ -1,0 +1,209 @@
+{
+  "comptroller": {
+    "address": "0x49620e9bfd117c7b05b4732980b05b7afee60a69",
+    "admin": "0x90dac303c9bcf43cb6e31eedad999490670f387e",
+    "oracle": "0x91cb061f29c37012daa29f8e5abe180fd415d9fa",
+    "pendingAdmin": "0x0000000000000000000000000000000000000000",
+    "comptrollerImplementation": "0x17afa1eb1feede3ed791e1b5c4b32b544e6cbc0b",
+    "closeFactorMantissa": 800000000000000000,
+    "liquidationIncentiveMantissa": [
+      "ERROR",
+      {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    ],
+    "maxAssets": 0,
+    "pauseGuardian": [
+      "ERROR",
+      {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    ],
+    "borrowCapGuardian": [
+      "ERROR",
+      {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    ],
+    "transferGuardianPaused": false,
+    "seizeGuardianPaused": false,
+    "compAddress/wing": [
+      "ERROR",
+      {
+        "code": 3,
+        "message": "execution reverted: 0x",
+        "data": "0x"
+      }
+    ]
+  },
+  "IRM": {
+    "address": "0x206e179b89c18bf077b03df4ce224a7339447a0f",
+    "owner": "0x28fa655c09918afc1798f4c152013685b21507bb",
+    "blocksPerYear": 10512000,
+    "baseRatePerBlock": 951293759,
+    "multiplierPerBlock": 8323820395,
+    "jumpMultiplierPerBlock": 475646879756,
+    "kink": 800000000000000000
+  },
+  "oracle": {
+    "address": "0x91cb061f29c37012daa29f8e5abe180fd415d9fa",
+    "owner": "0xe828183f4f85a7ec2dc5fb49a195c7b85f57964e",
+    "operator": "0x9171f417153b6773ff41e4ace4af36bb3e736748"
+  },
+  "markets": {
+    "fUSDT": {
+      "address": "0xbc11091d6203500c480f0305140c687ab52b224b",
+      "symbol": "fUSDT",
+      "name": "fUSDT",
+      "decimals": 18,
+      "underlying": "0x55d398326f99059ff775485246999027b3197955",
+      "implementation": "0x120af5748207161cc539ee5878fef9e3a12ad11a",
+      "admin": "0x90dac303c9bcf43cb6e31eedad999490670f387e",
+      "pendingAdmin": "0x0000000000000000000000000000000000000000",
+      "interestRateModel": "0x206e179b89c18bf077b03df4ce224a7339447a0f",
+      "reserveFactorMantissa": 100000000000000000,
+      "totalSupply": 2735761790792884552670,
+      "totalBorrows": 1284793278619005196555,
+      "totalReserves": [
+        "ERROR",
+        {
+          "code": -32005,
+          "message": "limit exceeded"
+        }
+      ],
+      "getCash": 42412623632725087539735,
+      "exchangeRateStored": 1370474385330446483,
+      "borrowIndex": 1774320952172395490,
+      "accrualBlockNumber": 116360215,
+      "borrowRatePerBlock": 3803669631,
+      "supplyRatePerBlock": 1173084649,
+      "market_isListed/collateralFactor/isComped": [
+        true,
+        800000000000000000,
+        true
+      ],
+      "borrowGuardianPaused": false,
+      "mintGuardianPaused": false,
+      "borrowCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ],
+      "supplyCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ],
+      "oracle_price_underlying": 998961520000000000,
+      "oracle_feed_underlying": "0xb97ad0e74fa7d920791e90258a6e2085088b4320",
+      "underlying_symbol": "USDT",
+      "underlying_decimals": 18,
+      "underlying_balanceOf_fToken": 42412623632725087539735
+    },
+    "fBUSD": {
+      "address": "0x5e5003e1b658a9c37660f4e6a730833b8a433047",
+      "symbol": "fBUSD",
+      "name": "fBUSD",
+      "decimals": 18,
+      "underlying": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "implementation": "0x120af5748207161cc539ee5878fef9e3a12ad11a",
+      "admin": "0x90dac303c9bcf43cb6e31eedad999490670f387e",
+      "pendingAdmin": "0x0000000000000000000000000000000000000000",
+      "interestRateModel": "0x206e179b89c18bf077b03df4ce224a7339447a0f",
+      "reserveFactorMantissa": 150000000000000000,
+      "totalSupply": 12105761041161628335,
+      "totalBorrows": 5787243528274078544,
+      "totalReserves": 29699651845331353711,
+      "getCash": 37324812175877747689,
+      "exchangeRateStored": 1107935619513390222,
+      "borrowIndex": 1302965830788247818,
+      "accrualBlockNumber": 114269893,
+      "borrowRatePerBlock": 4542892716,
+      "supplyRatePerBlock": 1666159379,
+      "market_isListed/collateralFactor/isComped": [
+        true,
+        0,
+        true
+      ],
+      "borrowGuardianPaused": true,
+      "mintGuardianPaused": true,
+      "borrowCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ],
+      "supplyCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ],
+      "oracle_price_underlying": 999805240000000000,
+      "oracle_feed_underlying": "0xcbb98864ef56e9042e7d2efef76141f15731b82f",
+      "underlying_symbol": "BUSD",
+      "underlying_decimals": 18,
+      "underlying_balanceOf_fToken": 37324812175877747689
+    },
+    "fBNB": {
+      "address": "0x6575cfa99a00a054cc3536f7978636701498fc81",
+      "symbol": "fBNB",
+      "name": "fBNB",
+      "decimals": 18,
+      "underlying": null,
+      "implementation": "(standalone-no-impl)",
+      "admin": "0x90dac303c9bcf43cb6e31eedad999490670f387e",
+      "pendingAdmin": "0x0000000000000000000000000000000000000000",
+      "interestRateModel": "0x206e179b89c18bf077b03df4ce224a7339447a0f",
+      "reserveFactorMantissa": 150000000000000000,
+      "totalSupply": 232885331992558326,
+      "totalBorrows": 8080787541910564,
+      "totalReserves": 241021518164928831,
+      "getCash": 488670667433678824,
+      "exchangeRateStored": 1098093789860634988,
+      "borrowIndex": 1317966638332630216,
+      "accrualBlockNumber": 116360215,
+      "borrowRatePerBlock": 1214317419,
+      "supplyRatePerBlock": 32615441,
+      "market_isListed/collateralFactor/isComped": [
+        true,
+        750000000000000000,
+        true
+      ],
+      "borrowGuardianPaused": false,
+      "mintGuardianPaused": false,
+      "borrowCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ],
+      "supplyCap": [
+        "ERROR",
+        {
+          "code": 3,
+          "message": "execution reverted: 0x",
+          "data": "0x"
+        }
+      ]
+    }
+  }
+}

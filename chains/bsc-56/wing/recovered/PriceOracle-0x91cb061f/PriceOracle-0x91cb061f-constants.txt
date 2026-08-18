@@ -1,0 +1,34 @@
+# Constants extracted from /tmp/claude-0/-home-user-wing/9b4b222d-8ff1-57e5-a623-e9bd6bbc9143/scratchpad/recon/oracle.bytecode.hex
+# runtime size: 4420 bytes
+
+## Candidate embedded ADDRESSES (PUSH20, nonzero):
+  0x696e76616c696420707269636541646472657373   (x3)
+
+## Candidate 32-byte CONSTANTS (PUSH32, >2^32, non-mask) — possible hashes/keys/salts:
+  0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0   (x2)
+  0xa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49   (x1)
+  0x70726963654164647265737320697320696e76616c6964000000000000000000   (x1)
+
+## Embedded ASCII strings (len>=5):
+  '4V[`@'
+  '8V[PPPV[`'
+  'Ownable: new owner is the zero addressOwnable: caller is not the ownerOwnable: caller is not the operator'
+  'PPPPPPV[`'
+  'PPPPPV['
+  'PPPPPV[a'
+  'PPPPV'
+  'PPPP['
+  'PP`@Q'
+  'Rlprice is zero`'
+  'Rsinvalid priceAddress``'
+  'T`@Q`'
+  'To_n20&;'
+  'V[PPV[`'
+  'W`@QbF'
+  '[PPPP`@Q=`'
+  '[PPPP`@Q=` '
+  '` R`@'
+  '` `@Q'
+  'dsolcC'
+  'ebzzr1X '
+  'priceAddress is invalid'

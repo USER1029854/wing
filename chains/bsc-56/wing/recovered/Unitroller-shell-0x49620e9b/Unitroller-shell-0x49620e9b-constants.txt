@@ -1,0 +1,22 @@
+# Constants extracted from /tmp/claude-0/-home-user-wing/9b4b222d-8ff1-57e5-a623-e9bd6bbc9143/scratchpad/recon/comptroller_unitroller.bytecode.hex
+# runtime size: 1555 bytes
+
+## Candidate embedded ADDRESSES (PUSH20, nonzero):
+  (none)
+
+## Candidate 32-byte CONSTANTS (PUSH32, >2^32, non-mask) — possible hashes/keys/salts:
+  0xca4f2f25d0898edd99413412fb94012f9e54ec8142f9b093e7720646a95b16a9   (x2)
+  0xe945ccee5d701fc83f9b8aa8ca94ea4219ec1fcbd4f4cab4f0ea57c5c3e1d815   (x2)
+  0xd604de94d45953f9138079ec1b82d533cb2160c906d1076d1f7ed54befbca97a   (x1)
+  0xf9ffabca9c8276e99321725bcb43fb076a6c66a54b7f21c4e8146d8519b417dc   (x1)
+  0x45b96fe442630264581b197e84bbada861235052c5a1aadfff9ea4e40a969aa0   (x1)
+
+## Embedded ASCII strings (len>=5):
+  '$|1w;'
+  '0V[`@'
+  '?dsolcC'
+  'NV[`@'
+  'P`@Q=`'
+  'T`@Q`'
+  'c&x"G'
+  'ebzzr1X '

@@ -1,0 +1,11 @@
+{
+  "ContractName": "SykMigrator",
+  "CompilerVersion": "v0.8.23+commit.f704f362",
+  "OptimizationUsed": "1",
+  "Runs": "200",
+  "EVMVersion": "paris",
+  "LicenseType": "None",
+  "Proxy": "0",
+  "Implementation": "",
+  "ConstructorArguments": "0000000000000000000000006c2c06790b3e3e3c38e12ee22f8183b37a13ee5500000000000000000000000032eb7902d4134bf98a28b963d26de779af92a212000000000000000000000000acc51ffdef63fb0c014c882267c3a17261a5ed5000000000000000000000000091bda4174c25efeef6f4e5721fa36e31e0015801"
+}

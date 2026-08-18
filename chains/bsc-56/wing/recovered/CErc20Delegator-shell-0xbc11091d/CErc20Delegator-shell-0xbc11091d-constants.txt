@@ -1,0 +1,50 @@
+# Constants extracted from /tmp/claude-0/-home-user-wing/9b4b222d-8ff1-57e5-a623-e9bd6bbc9143/scratchpad/recon/fUSDT_proxy.bytecode.hex
+# runtime size: 8302 bytes
+
+## Candidate embedded ADDRESSES (PUSH20, nonzero):
+  (none)
+
+## Candidate 32-byte CONSTANTS (PUSH32, >2^32, non-mask) — possible hashes/keys/salts:
+  0xd604de94d45953f9138079ec1b82d533cb2160c906d1076d1f7ed54befbca97a   (x1)
+  0x63616c6c65652e64656c656761746563616c6c206661696c6564000000000000   (x1)
+
+## Embedded ASCII strings (len>=5):
+  '!q "_'
+  ',V[PPPP'
+  '2V[PPPP'
+  '4W=` '
+  'CErc20Delegator:fallback: cannot send value to fallbackCErc20Delegator::_setImplementation: Caller must be admin'
+  'FV[`@'
+  'PPPPPV['
+  'PPPPPV[4'
+  'PPPPPV[`@'
+  'PPPPV'
+  'PPPPV[`'
+  'PPPPV[`@'
+  'PPPV[`@'
+  'PPP`@Q'
+  'PPV[P`'
+  'PPV[`@'
+  'PP`@Q'
+  'PV[`@'
+  'P[P`@'
+  'P[P`@RPPP'
+  'P`@Q=`'
+  'RPPPPPP'
+  'T`@Q`'
+  'UW`@Q'
+  'U`@Q` `$'
+  'V[PPPP'
+  'V[P[`'
+  'V[```'
+  'W`@QbF'
+  'ZV[``'
+  '[PPPPP'
+  '`@Q`$'
+  'c&x"G'
+  'callee.delegatecall failed'
+  'dsolcC'
+  'ebzzr1X '
+  'oV[`@'
+  'oW=` '
+  'rW`@QbF'
