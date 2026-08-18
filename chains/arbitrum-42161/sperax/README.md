@@ -27,7 +27,7 @@ Safe 3-of-5  0x5b12d984 ── owns ──► ProxyAdmin 0x3e49925a ──upgrad
 ## Contract inventory (all VERIFIED)
 | Contract | Address | Location |
 |---|---|---|
-| SPABuyback proxy (target) | `0xFbc0d3cA777722d234FE01dba94DeDeDb277AFe3` | shell (OZ TransparentUpgradeableProxy) |
+| SPABuyback proxy (target) | `0xFbc0d3cA777722d234FE01dba94DeDeDb277AFe3` | `SPABuyback-proxyshell-0xFbc0d3cA/` (decompiled — confirmed vanilla OZ TransparentUpgradeableProxy: admin/changeAdmin/implementation/upgradeTo, no custom logic, EIP-1967 slots → verified impl+ProxyAdmin) |
 | SPABuyback impl | `0xa8308a2deeaeb7ee7cb27845328a27cd755c8dc9` | `SPABuyback-impl-0xa8308a2d/` |
 | ProxyAdmin | `0x3e49925a79cbfb68baa5bc9dfb4f7d955d1ddf25` | `ProxyAdmin-0x3e49925a/` |
 | MasterPriceOracle | `0x14d99412dab1878dc01fe7a1664cde85896e8e50` | `MasterPriceOracle-0x14d99412/` |

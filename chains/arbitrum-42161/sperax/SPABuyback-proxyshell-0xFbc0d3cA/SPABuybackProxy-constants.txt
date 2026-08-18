@@ -1,0 +1,36 @@
+# Constants extracted from /tmp/claude-0/-home-user-wing/9b4b222d-8ff1-57e5-a623-e9bd6bbc9143/scratchpad/recon/SPABuyback_proxy.bytecode.hex
+# runtime size: 2082 bytes
+
+## Candidate embedded ADDRESSES (PUSH20, nonzero):
+  (none)
+
+## Candidate 32-byte CONSTANTS (PUSH32, >2^32, non-mask) — possible hashes/keys/salts:
+  0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f   (x1)
+  0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b   (x1)
+
+## Embedded ASCII strings (len>=5):
+  "'V[V[a"
+  "1'hJV"
+  'Address: low-level delegate call failedUpgradeableProxy: new implementation is not a contractAddress: delegate call to non-contractTransparentUpgradeableProxy: admin cannot fallback to proxy target'
+  'KV[`@'
+  'KV[``a'
+  'PPPPPPV[a'
+  'PPPV[;'
+  'PPPV[Pa'
+  'PPP`@Q'
+  'PP`@Q'
+  'RPPPPPP'
+  'RUV[``'
+  'RUV[``a'
+  'SdsolcC'
+  'TransparentUpgradeableProxy: new admin is the zero address6'
+  'V[PPPV[`'
+  'V[PV[a'
+  'V[`@Q`'
+  'W`@QbF'
+  'ZV[PPPP'
+  ']V[6a'
+  '`@QbF'
+  '`V[`@'
+  'dipfsX"'
+  '~dMyB/'
